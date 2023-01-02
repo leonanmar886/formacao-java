@@ -1,3 +1,5 @@
+package exceptions;
+
 public class Flow {
     public static void main(String[] args) {
         System.out.println("Ini do main");
