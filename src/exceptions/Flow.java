@@ -12,7 +12,7 @@ public class Flow {
         try {
             metodo2();
         } catch (Exception e) {
-            System.out.println("Arithmetic exception");
+            System.out.println(e.getMessage());
         }
 
         System.out.println("Fim do metodo1");
@@ -22,7 +22,9 @@ public class Flow {
         System.out.println("Ini do metodo2");
         for(int j = 1; j <= 5; j++) {
             System.out.println(j);
-            int a = 4 /0;
+//            int a = 4 /0;
+            Conta c = null;
+            c.deposita();
         }
         System.out.println("Fim do metodo2");
     }
