@@ -1,4 +1,6 @@
-package exceptions;
+package exceptionsCourse.models;
+
+import exceptionsCourse.exceptions.MyException;
 
 public class Flow {
     public static void main(String[] args) {
@@ -9,23 +11,17 @@ public class Flow {
 
     private static void metodo1() {
         System.out.println("Ini do metodo1");
-        try {
-            metodo2();
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-
+//        try {
+//            metodo2();
+//        } catch (Exception e) {
+//            System.out.println(e.getMessage());
+//        }
+        metodo2();
         System.out.println("Fim do metodo1");
     }
 
     private static void metodo2() {
         System.out.println("Ini do metodo2");
-        for(int j = 1; j <= 5; j++) {
-            System.out.println(j);
-//            int a = 4 /0;
-            Conta c = null;
-            c.deposita();
-        }
-        System.out.println("Fim do metodo2");
+        throw new MyException("Deu ruim no método");
     }
 }
