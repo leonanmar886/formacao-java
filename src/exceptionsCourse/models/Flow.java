@@ -1,6 +1,7 @@
 package exceptionsCourse.models;
 
-import exceptionsCourse.exceptions.MyException;
+import exceptionsCourse.exceptions.MyExceptionChecked;
+import exceptionsCourse.exceptions.MyExceptionUnchecked;
 
 public class Flow {
     public static void main(String[] args) {
@@ -22,6 +23,11 @@ public class Flow {
 
     private static void metodo2() {
         System.out.println("Ini do metodo2");
-        throw new MyException("Deu ruim no método");
+        throw new MyExceptionUnchecked("Deu ruim no método");
+    }
+
+    private static void metodo3() throws MyExceptionChecked {
+        System.out.println("Ini do metodo3");
+        throw new MyExceptionChecked("Deu ruim no método");
     }
 }
