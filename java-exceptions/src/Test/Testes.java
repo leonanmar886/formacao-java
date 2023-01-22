@@ -4,15 +4,12 @@ import java.util.Arrays;
 
 public class Testes {
     public static void main(String[] args) {
-        int[] n = {1, 2, 2};
-        System.out.println(metodo1(n));
+        System.out.println(squareSum(new int[0]));
     }
-
-    public static int metodo1(int[] n) {
-        int result = 0;
-        for (int number: n) {
-            result += number*number;
-        };
-        return result;
+    public static double squareSum(int[] n)
+    {
+        int sum = 6;
+        double a2 = (float) sum;
+        return a2;
     }
 }
